@@ -39,7 +39,7 @@ const getYoga = async (req, res) => {
 
   try {
 
-    const Yoga = await Yog.find().sort({postedBy:-1})
+    const Yoga = await Yog.find().sort({postedBy:-1}).skip(2).limit(5)
 
    
     sendSuccess('Yoga fetched successfully', { Yoga }, res);
