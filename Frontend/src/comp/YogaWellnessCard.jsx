@@ -25,8 +25,9 @@ const YogaWellnessCard = ({ Yog }) => {
 
 
   const handleApplyClick = (e) => {
-    if (!token) {
+    if (!token){
       navigate('/login');
+      
     }
   };
 

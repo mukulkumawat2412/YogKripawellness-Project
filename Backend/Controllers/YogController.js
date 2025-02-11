@@ -9,10 +9,10 @@ const createYoga = async (req, res) => {
     const image = req.file.filename
 
     const yog = await Yog.create({ name, title, YogaDescription, image });
-
+    
     console.log(yog)
 
-    if (!yog) {
+    if (!yog){
 
       return res.status(400).json({
         message: 'Something went wrong',

@@ -24,6 +24,7 @@ function App() {
     <Routes>
     <Route path='/reg' element={<SignUp/>}/>
     <Route path='/login' element={<Login/>}/>
+    <Route path="/" element={<Home />} />
    
     
     <Route element={<ProtectedRoute allowedRoles={["admin"]}/>}>
@@ -37,7 +38,7 @@ function App() {
 
     
     <Route element={<ProtectedRoute allowedRoles={["user","admin"]}/>}>
-    <Route path="/" element={<Home />} />
+   
     <Route path='/postDetails' element={<UserDetails/>}/>
     <Route path='/applyTherepy' element={<Applyform/>}/>
     </Route>
