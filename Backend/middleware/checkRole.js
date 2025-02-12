@@ -8,7 +8,7 @@ const checkRole = (...allowedRoles) => {
       
     } else {
       return res.status(403).json({
-        message: 'Not Authorized to get jobs',
+        message: 'Not Authorized to get Therepy',
       });
     }
   };

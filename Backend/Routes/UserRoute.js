@@ -7,6 +7,6 @@ import checkRole from "../middleware/checkRole.js"
 
 
 router.post("/register", Register)
-router.post("/login",Login)
+router.post("/login", Login)
 
 
