@@ -46,7 +46,7 @@ export default function Navbar() {
             </button>
             {servicesDropdownOpen && (
               <div className="absolute left-0 z-20 w-40 mt-2 bg-gray-600 border rounded-md shadow-md t">
-                <DropdownItem title="Sirodhara"  />
+                <DropdownItem title="Shirodhara"  />
                 <DropdownItem title="Acupressure" />
                 <DropdownItem title="Stream Bath" />
               </div>
